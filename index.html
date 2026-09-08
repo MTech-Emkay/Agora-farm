@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <link
+      rel="android-chrome-icon"
+      sizes="192x192"
+      href="./Images/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>agora | Home page</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header>
+      <!-- Upper header -->
+
+      <div class="upper-header">
+        <!-- logo -->
+
+        <a href="index.html">
+          <img src="/Images/logo.png" alt="Agora" />
+        </a>
+
+        <!-- Search form -->
+
+        <form class="search-form" role="search" action="" hidden>
+          <label for="search-item" role="search">Search Products</label>
+          <input
+            type="text"
+            name="search"
+            id="search-item"
+            placeholder="Search"
+          />
+          <button
+            class="search-button"
+            type="submit"
+            aria-label="Search Products"
+          >
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
+
+        <!-- User icons -->
+
+        <ul class="user-icons">
+          <li>
+            <a href="" aria-label="view saved items"
+              ><i class="fa-solid fa-heart"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="" aria-label="View shopping cart"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+
+          <li>
+            <button type="button" aria-label="open account menu">
+              <i class="fa-solid fa-user"></i>
+            </button>
+
+            <ul class="user-options" hidden>
+              <li><a href="">Log in</a></li>
+
+              <li><a href="">Register</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <button
+              class="hamburger-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="primary-navigation"
+              aria-label="Open navigation menu"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navigation links -->
+
+      <nav
+        class="primary-nav"
+        id="primary-navigation"
+        aria-label="primary-navigation"
+        hidden
+      >
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" aria-current="page">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="contacts.html">Contacts</a>
+          </li>
+
+          <li>
+            <a href="shop.html">Shop</a>
+          </li>
+
+          <li>
+            <a href="offers.html">Offers</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <!-- Main contents of the page -->
+
+    <main>
+      <!-- The first section of the page -->
+
+      <section class="hero-section">
+        <div>
+          <h1>
+            Make healthy <br />
+            life with <span>fresh</span> grocery
+          </h1>
+
+          <a class="shop-now" href="shop.html">Shop now</a>
+        </div>
+
+        <div>
+          <img src="/Images/Agora.png" alt="" />
+        </div>
+      </section>
+
+      <!-- The second section of the page -->
+
+      <section class="featured-categories">
+        <h2>Featured Categories</h2>
+
+        <div class="categories">
+          <div>
+            <div class="featured-images">
+              <img src="/Images/fruits.png" alt="" />
+            </div>
+
+            <p>Fruits</p>
+          </div>
+
+          <div>
+            <div class="featured-images">
+              <img src="/Images/farm-products.png" alt="" />
+            </div>
+
+            <p>Farm Products</p>
+          </div>
+
+          <div>
+            <div class="featured-images adjust">
+              <img src="/Images/carrot.png" alt="" />
+            </div>
+
+            <p>Carrots</p>
+          </div>
+
+          <div>
+            <div class="featured-images adjust">
+              <img src="/Images/shopping-cart.png" alt="" />
+            </div>
+
+            <p>Shopping</p>
+          </div>
+
+          <div>
+            <div class="featured-images adjust">
+              <img src="/Images/vegetables.png" alt="" />
+            </div>
+
+            <p>Vegetables</p>
+          </div>
+        </div>
+
+        <a class="view-all" href="#"
+          >View all <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </section>
+
+      <!-- The third section of the page -->
+
+      <section class="fresh-section">
+        <div class="fresh-vegetables">
+          <div class="fresh-text">
+            <div>
+              <p class="discount">Now 20% Discount</p>
+
+              <h2>Purely Fresh Vegetables</h2>
+            </div>
+
+            <a class="shop-now" href="shop.html"
+              >Shop now <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="fresh-image">
+            <img src="/Images/fresh-vegetables.png" alt="" />
+          </div>
+        </div>
+
+        <div class="fresh-fruits">
+          <div class="fresh-text">
+            <div>
+              <p class="discount">Now 20% Discount</p>
+
+              <h2>Fresh Fruits, Pure Quality</h2>
+            </div>
+
+            <a class="shop-now" href="shop.html"
+              >Shop now <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div>
+            <img src="/Images/fresh-fruits.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- The fourth section of the page -->
+
+      <section class="featured-products">
+        <h2>Featured <span>Products</span></h2>
+
+        <div class="products">
+          <div>
+            <img src="Images/pork food.jpeg" alt="" />
+
+            <p>Pork Food</p>
+
+            <p><span>price</span> $5.99</p>
+
+            <a href="">Buy now</a>
+          </div>
+
+          <div>
+            <img src="Images/snyders-of-hanover.webp" alt="" />
+
+            <p>Synders</p>
+
+            <p><span>price</span> $9.99</p>
+
+            <a href="">Buy now</a>
+          </div>
+
+          <div>
+            <img src="Images/kachi-oil.jpg" alt="" />
+
+            <p>kachi-oil</p>
+
+            <p><span>price</span> $13.99</p>
+
+            <a href="">Buy now</a>
+          </div>
+
+          <div>
+            <img src="Images/totes.png" alt="" />
+
+            <p>Totes</p>
+
+            <p><span>price</span> $12.99</p>
+
+            <a href="">Buy now</a>
+          </div>
+
+          <div>
+            <img src="Images/totinos-pizza-rolls.webp" alt="" />
+
+            <p>Totinos</p>
+
+            <p><span>price</span> $9.99</p>
+
+            <a href="">Buy now</a>
+          </div>
+
+          <div>
+            <img src="Images/hershey-kisses.webp" alt="" />
+
+            <p>Hershey kisses</p>
+
+            <p><span>price</span> $12.99</p>
+
+            <a href="">Buy now</a>
+          </div>
+
+          <div>
+            <img src="Images/vim.jpg" alt="" />
+
+            <p>Vim</p>
+
+            <p><span>price</span> $8.99</p>
+
+            <a href="">Buy now</a>
+          </div>
+
+          <div>
+            <img src="Images/oreo.webp" alt="" />
+
+            <p>Oreo</p>
+
+            <p><span>price</span> $20.99</p>
+
+            <a href="">Buy now</a>
+          </div>
+        </div>
+
+        <a href="shop.html">Shop now</a>
+      </section>
+
+      <!-- The fifth section of the page -->
+
+      <section class="discount">
+        <div class="summer-discount">
+          <div>
+            <h2>Summer Discount</h2>
+            <p>Get 10% off Limited Time Offer</p>
+          </div>
+        </div>
+
+        <div class="fruit-bag">
+          <img src="Images/fruit-bag.jpeg" alt="" />
+        </div>
+      </section>
+
+      <!-- The last section of the page -->
+
+      <section class="deals">
+        <div>
+          <img src="Images/ore-ida-frozen-french-fries.webp" alt="" />
+
+          <p>French fries</p>
+        </div>
+
+        <div>
+          <img src="Images/progresso-chicken-noodle-soup.webp" alt="" />
+
+          <p>Chicken noodles</p>
+        </div>
+
+        <div>
+          <img src="Images/betty-crocker-cake-mix-vanilla.webp" alt="" />
+
+          <p>Croaker cake</p>
+        </div>
+
+        <div>
+          <img src="Images/green-oil.jpeg" alt="" />
+
+          <p>Power Oil</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
