@@ -134,7 +134,6 @@ header {
 .view-all {
   display: flex;
   justify-self: center;
-  align-items: center;
   gap: 0.2rem;
 }
 
