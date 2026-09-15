@@ -116,6 +116,10 @@ header {
   border-radius: 20px;
 }
 
+.button-div {
+  justify-self: center;
+}
+
 .hero-section img {
   border-radius: 20px;
 }
@@ -129,14 +133,6 @@ header {
   text-align: center;
   font-size: 1.9rem;
   padding-block: 1em;
-}
-
-.view-all {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2rem;
 }
 
 .featured-categories p {
@@ -295,9 +291,6 @@ header {
 }
 
 .see-more {
-  display: block;
-  text-align: center;
-  justify-self: center;
   border: 1px black solid;
   font-size: 1.2rem;
   padding: 0.5em 1em;
@@ -455,7 +448,7 @@ header {
   .hero-section img {
     border-radius: 25px;
   }
-}  
+}
 
 /* For Desktops */
 @media (min-width: 1024px) {
