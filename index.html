@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Json -->
+     <link rel="manifest" href="manifest.json">
+
     <!-- Google Fonts -->
 
     <!-- Roboto font -->
@@ -89,7 +92,7 @@
         <!-- Search form -->
 
         <form class="search-form" role="search" action="" hidden>
-          <label for="search-item" role="search">Search Products</label>
+          <label for="search-item" role="search" hidden>Search Products</label>
           <input
             type="text"
             name="search"
@@ -132,7 +135,7 @@
             </ul>
           </li>
 
-          <li>
+          <li class="hamburger">
             <button
               class="hamburger-menu"
               type="button"
@@ -173,6 +176,14 @@
 
           <li>
             <a href="offers.html">Offers</a>
+          </li>
+
+          <li>
+            <a href="#">Transaction</a>
+          </li>
+
+          <li>
+            <a href="#">Orders</a>
           </li>
         </ul>
       </nav>
@@ -216,12 +227,12 @@
               <p>Fruits</p>
             </a>
 
-            <a href="farm-products.html">
+            <a href="vegetables.html">
               <div class="featured-images">
-                <img src="/Images/farm-products.png" alt="" />
+                <img src="/Images/vegetables.png" alt="" />
               </div>
 
-              <p>Farm Products</p>
+              <p>Vegetables</p>
             </a>
 
             <a href="carrots.html">
@@ -240,12 +251,12 @@
               <p>Shopping</p>
             </a>
 
-            <a href="vegetables.html">
+            <a href="farm-products.html">
               <div class="featured-images adjust">
-                <img src="/Images/vegetables.png" alt="" />
+                <img src="/Images/farm-products.png" alt="" />
               </div>
 
-              <p>Vegetables</p>
+              <p>Farm Products</p>
             </a>
           </div>
 
@@ -304,7 +315,7 @@
       <!-- The fourth section of the page -->
 
       <section class="featured-products">
-        <p>Products</p>
+        <p class="tip">Products</p>
         <h2>Featured <span>Products</span></h2>
 
         <div class="products">
@@ -474,7 +485,7 @@
       <!-- The last section of the page -->
 
       <section class="deals-of-the-day">
-        <p>Today Deals</p>
+        <p class="tip">Today Deals</p>
         <h2>Deals of the Day</h2>
 
         <div class="deals">
