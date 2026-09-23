@@ -93,7 +93,11 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  padding: 0.7em 1.5em;
+  padding: 1em 1.5em;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid;
 }
 
 /* Upper header */
@@ -116,6 +120,16 @@ header {
   width: 40%;
 }
 
+.icons {
+  width: 1.3rem;
+}
+
+/* Nav links */
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
 /* Main Page */
 
 /* Hero section */
@@ -123,7 +137,8 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3.5rem;
-  padding: 2em 2em;
+  padding-inline: 2em;
+  padding-block: 5em 2em;
 }
 
 .hero-section h1 {
@@ -298,9 +313,9 @@ header {
 
 .see-more {
   border: 1px black solid;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.5em 1em;
-  border-radius: 22px;
+  border-radius: 20px;
 }
 
 /* Fifth(Summer discount) section of the page */
@@ -412,6 +427,47 @@ header {
   font-weight: 600;
 }
 
+/* Footer */
+footer {
+  padding-block-start: 1em;
+}
+
+.footer-div {
+  background-color: var(--secondarycolor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding-block: 5em 2em;
+  padding-inline: 2em;
+}
+
+.upper-footer {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.upper-footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer img {
+  width: 35%;
+}
+
+.lower-footer {
+  display: flex;
+  gap: 2rem;
+}
+
+footer p,
+footer a {
+  font-size: 0.9rem;
+  max-width: 40ch;
+}
+
 /* Media Queries */
 
 /* For Tablets */
@@ -436,13 +492,17 @@ header {
 
   .user-icons {
     width: 30%;
-    font-size: 1.7rem;
+  }
+
+  .icons {
+    width: 2rem;
   }
 
   /* Hero Section */
   .hero-section {
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding-block: 7em 2em;
   }
 
   .hero-section h1 {
@@ -500,11 +560,11 @@ header {
   }
 
   .summer-discount-div {
-    flex: 2;
+    flex: 1.7;
   }
 
   .fruit-bag {
-    flex: 1;
+    flex: 1.3;
   }
 
   .summer-discount h2 {
@@ -516,7 +576,7 @@ header {
   }
 
   .countdown {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   /* Last section */
@@ -530,6 +590,17 @@ header {
 
   .deals-text p {
     font-size: 1.5rem;
+  }
+
+  /* Footer */
+  .upper-footer {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  footer p,
+  footer a {
+    font-size: 1.3rem;
+    max-width: 30ch;
   }
 }
 
@@ -552,7 +623,8 @@ header {
   .fresh-section,
   .featured-products,
   .summer-discount,
-  .deals-of-the-day {
+  .deals-of-the-day,
+  .footer-div {
     padding-inline: 4em;
   }
 
@@ -564,13 +636,25 @@ header {
   form {
     display: block;
     font-size: 1.3rem;
+    position: relative;
+  }
+
+  form i {
+    font-size: 1.1rem;
   }
 
   header input {
-    border-radius: 10px;
-    border: solid 1px;
+    border-radius: 15px;
+    border: solid 1.5px;
     padding: 0.2rem 1rem;
     font-size: 1rem;
+  }
+
+  .search-button {
+    position: absolute;
+    right: 0.7rem;
+    top: 0.2rem;
+    bottom: 0.2rem;
   }
 
   .upper-header a {
@@ -596,6 +680,10 @@ header {
   }
 
   /* Hero Section */
+  .hero-section {
+    padding-block: 10em 2em;
+  }
+
   .hero-section img {
     width: 85%;
     justify-self: end;
@@ -649,5 +737,10 @@ header {
   /* Last section */
   .deals {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Footer */
+  .upper-footer {
+    grid-template-columns: 2fr 1fr 1fr 1fr ;
   }
 }
